@@ -36,6 +36,7 @@
 }
 body {
   font-family: 'HelveticaNeueCyr';
+  font-size: 12px;
   margin: 0;
 }
 h2 {
@@ -54,6 +55,103 @@ a {
   padding-left: 15px;
   padding-right: 15px;
 }
+/* ------------------------------- */
+.film {
+  padding: 20px;
+}
+.film__info {
+  margin-bottom: 14px;
+  padding-top: 10px;
+  position: relative;
+}
+.film__limit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.film__name {
+  color: #232323;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.film__country {
+  display: flex;
+  align-items: center;
+  color: #09337B;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+.film__country img {
+  margin-right: 8px;
+}
+.film__date {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #838F97;
+  position: relative;
+  margin-bottom: 15px;
+}
+.film__date img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.film__schedule > p {
+  color: #838F97;
+  margin-bottom: 8px;
+}
+.film__2d,
+.film__3d {
+  margin-bottom: 10px;
+}
+.film__2d-text,
+.film__3d-text {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.film__sessions {
+  display: flex;
+  flex-wrap: wrap;
+}
+.film__session {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #EAF2FA;
+  width: 100px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 13px 10px;
+  position: relative;
+}
+.film__session:hover {
+  background-color: #1E53B4;
+}
+.film__session:hover .film__session-time,
+.film__session:hover .film__session-price,
+.film__session:hover .film__session::after {
+  color: #FFFFFF;
+}
+.film__session-time {
+  color: #444444;
+}
+.film__session::after {
+  content: "|";
+  position: absolute;
+  left: calc(50% - 2px);
+  width: 4px;
+  color: #838F97;
+  /* margin: 0 8px; */
+}
+.film__session-price {
+  color: #232323;
+  font-weight: bold;
+}
+/* ------------------------------- */
 .wrap-contacts {
   background-color: #EFF3F8;
 }
@@ -118,6 +216,7 @@ a {
 .work-hours__days p:last-child {
   color: #232323;
 }
+/* ---------------------------------- */
 .wrap-footer {
   background-color: #E0E7F0;
 }
@@ -126,7 +225,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
   color: #838F97;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -149,6 +247,7 @@ a {
   height: 22px;
   margin-left: 10px;
 }
+/* ----------------------------------- */
 @media (min-width: 768px) {
   .inner-wrap  {
     max-width: 1200px;
@@ -196,6 +295,7 @@ a {
     order: 0;
   }
 }
+/* ---------------------------------- */
 @media (min-width: 1200px) {
   .contacts {
     padding-top: 80px;
