@@ -61,9 +61,62 @@ a {
   padding-top: 45px;
   padding-bottom: 45px;
 }
+.contacts h2 {
+  margin-bottom: 15px;
+}
+.contacts__info {
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.contacts__phone-info {
+  margin-bottom: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+}
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.contacts__phone img {
+  margin-right: 10px;
+}
+.contacts__phone a {
+  font-weight: bold;
+  font-size: 23px;
+}
 .work-hours {
   padding: 20px;
   background-color: #FFF;
+  box-shadow: 0 25px 0 -10px #E5ECF5;;
+}
+.work-hours__mode {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+.work-hours__mode img {
+  margin-right: 10px;
+}
+.work-hours__days {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom: 1px dashed #E5ECF5;
+  margin-bottom: 12px;
+}
+.work-hours__days:last-child {
+  margin-bottom: 0;
+}
+.work-hours__days p:first-child {
+  color: #1E53B4;
+}
+.work-hours__days p:last-child {
+  color: #232323;
 }
 .wrap-footer {
   background-color: #E0E7F0;
@@ -103,6 +156,34 @@ a {
     padding-left: 20px;
    padding-right: 20px;
   }
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contacts h2 {
+    font-size: 40px;
+  }
+  .contacts__info {
+    margin-bottom: 25px;
+    line-height: 27px;
+    font-size: 18px;
+  }
+  .contacts__phone-info {
+    line-height: 27px;
+    font-size: 18px;
+  }
+  .work-hours {
+    padding: 30px;
+    box-shadow: 15px 15px #E5ECF5;
+  }
+  .work-hours__mode {
+    margin-bottom: 27px;
+    font-size: 20px;
+  }
+  .work-hours__days {
+    margin-bottom: 19px;
+    font-size: 21px;
+  }
   .page-footer {
     flex-direction: row;
     padding-top: 40px;
@@ -114,4 +195,25 @@ a {
   .page-footer__copyright {
     order: 0;
   }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+  .contacts h2 {
+    font-size: 50px;
+  }
+  .contacts__info {
+   max-width: 670px;
+  }
+  .work-hours {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    width: 410px;
+    box-sizing: border-box;
+  }
+  
 }
