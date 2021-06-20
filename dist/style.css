@@ -121,6 +121,7 @@ a {
 .film__session {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid #EAF2FA;
   width: 100px;
   height: 40px;
