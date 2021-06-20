@@ -57,8 +57,17 @@ a {
   padding-right: 15px;
 }
 /* ------------------------------- */
+.films {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
 .film {
   padding: 20px;
+  box-shadow: 0px 2px 17px rgba(7, 48, 118, 0.07);
+  margin-bottom: 10px;
+}
+.film:last-child {
+  margin-bottom: 0;
 }
 .film__poster-link {
   display: block;
@@ -300,6 +309,10 @@ a {
     padding-left: 20px;
    padding-right: 20px;
   }
+  .films {
+    padding-top: 10px;
+    padding-bottom: 80px;
+  }
   .film {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -409,6 +422,7 @@ a {
     grid-template-rows: 1fr 1fr;
     height: 366px;
     padding: 0;
+    margin-bottom: 30px;
   }
   .film__poster {
     grid-column: 1;
