@@ -14,7 +14,7 @@
     <div class="films inner-wrap">
       <div class="film">
         <div class="film__poster">
-          <a href="#" class="film__poster-link">
+          <a href="#" class="film__poster-link" data-micromodal-trigger="modal-1">
             <img class="film__poster-img" src="../src/img/cat.jpg" alt="котик">
             <div class="play-button">
               <img src="../src/svg/button-play.svg" alt="" class="play-button__img">
@@ -48,27 +48,27 @@
           <div class="film__2d">
             <p class="film__2d-text">2D</p>
             <div class="film__sessions">
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
-              <a href="#" class="film__session">
+              <a href="#" class="film__session" data-micromodal-trigger="modal-plan">
                 <span class="film__session-time">09:40</span>
                 <span class="film__session-price">300 ₽</span>
               </a>
@@ -107,7 +107,7 @@
       </div>
       <div class="film">
         <div class="film__poster">
-          <a href="#" class="film__poster-link">
+          <a href="#" class="film__poster-link"  data-micromodal-trigger="modal-1">
             <img class="film__poster-img" src="../src/img/cat.jpg" alt="котик">
             <div class="play-button">
               <img src="../src/svg/button-play.svg" alt="" class="play-button__img">
@@ -252,7 +252,277 @@
     </footer>
   </div>
 
-  <script src="../dist/main.js"></script>
+  <div class="modal micromodal-slide" id="modal-plan" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header class="modal-plan__header">
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          <img class="film__limit" src="../src/svg/Ограничение.svg" alt="">
+          <p>Фильм</p>
+          <div class="film__name">
+            <p>Те, кто желает мне смерти</p>
+          </div>
+          <div class="film__detail">
+            <div class="film__day">
+              12 мая, 13:40
+            </div>
+            <div class="film__zal">
+              Зал №1. 150 мест
+            </div>
+            <div class="film__3d-text">3D</div>
+            <div class="film__duration">
+              <img src="../src/svg/watch 1.svg" alt="иконка часы">
+              <p>Продолжительность: <span>106 минут</span></p>
+            </div>
+          </div>
+        </header>
+        <main class="modal-plan__main">
+          <div class="screen">
+            <img src="../src/svg/Rectangle 138.svg" alt="экран в кинозале">
+            <p>Экран</p>
+          </div>
+          <div class="seats">
+            <div class="seats-plan">
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">1</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                </div>
+                <div class="seats-plan__row-number">1</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">2</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                </div>
+                <div class="seats-plan__row-number">2</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">3</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                </div>
+                <div class="seats-plan__row-number">3</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">4</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                  <div class="seats-plan__row-place color-free">17</div>
+                </div>
+                <div class="seats-plan__row-number">4</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">5</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                </div>
+                <div class="seats-plan__row-number">5</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">6</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                  <div class="seats-plan__row-place color-free">17</div>
+                </div>
+                <div class="seats-plan__row-number">6</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">7</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                </div>
+                <div class="seats-plan__row-number">7</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">8</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-free">1</div>
+                  <div class="seats-plan__row-place color-free">2</div>
+                  <div class="seats-plan__row-place color-free">3</div>
+                  <div class="seats-plan__row-place color-free">4</div>
+                  <div class="seats-plan__row-place color-free">5</div>
+                  <div class="seats-plan__row-place color-free">6</div>
+                  <div class="seats-plan__row-place color-free">7</div>
+                  <div class="seats-plan__row-place color-free">8</div>
+                  <div class="seats-plan__row-place color-free">9</div>
+                  <div class="seats-plan__row-place color-free">10</div>
+                  <div class="seats-plan__row-place color-free">11</div>
+                  <div class="seats-plan__row-place color-free">12</div>
+                  <div class="seats-plan__row-place color-free">13</div>
+                  <div class="seats-plan__row-place color-free">14</div>
+                  <div class="seats-plan__row-place color-free">15</div>
+                  <div class="seats-plan__row-place color-free">16</div>
+                  <div class="seats-plan__row-place color-free">17</div>
+                </div>
+                <div class="seats-plan__row-number">8</div>
+              </div>
+              <div class="seats-plan__row">
+                <div class="seats-plan__row-number">9</div>
+                <div class="seats-plan__row-places">
+                  <div class="seats-plan__row-place color-two">1 -2</div>
+                  <div class="seats-plan__row-place color-two">3 - 4</div>
+                  <div class="seats-plan__row-place color-two">5 - 6</div>
+                  <div class="seats-plan__row-place color-two">7 - 8</div>
+                  <div class="seats-plan__row-place color-two">9 - 10</div>
+                  <div class="seats-plan__row-place color-two">11 -12</div>
+                  <div class="seats-plan__row-place color-two">13 - 14</div>
+                  <div class="seats-plan__row-place color-two">15- 16</div>
+                </div>
+                <div class="seats-plan__row-number">9</div>
+              </div>
+              
+            </div>
+            <div class="seats-class">
+              <div class="seats-class__item">
+                <div class="seats-class__item-color color-free"></div>
+                <div class="seats-class__item-text">
+                  Свободные места
+                </div>
+              </div>
+              <div class="seats-class__item">
+                <div class="seats-class__item-color color-busy"></div>
+                <div class="seats-class__item-text">
+                  Занято
+                </div>
+              </div>
+              <div class="seats-class__item">
+                <div class="seats-class__item-color color-two"></div>
+                <div class="seats-class__item-text">
+                  Места для двоих
+                </div>
+              </div>
+              <div class="seats-class__item">
+                <div class="seats-class__item-color color-selected "></div>
+                <div class="seats-class__item-text">
+                  Место выбрано
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="modal-plan__footer">
+          <div class="to-pay">
+            <p>Итого к оплате:</p>
+            <p>380 рублей</p>
+          </div>
+          <div class="places">
+            Выбрано <span class="places__count">5</span> мест
+          </div>
+          <a href="#" class="pay-btn">Оплатить билеты</a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="../node_modules/micromodal/dist/micromodal.js"></script>
+
+  <script src="../dist/main.js" type="module"></script>
 </body>
 
 </html>
