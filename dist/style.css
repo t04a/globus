@@ -538,7 +538,6 @@ a {
 }
 .micromodal-slide {
   display: none;
-  display: block;
 }
 .micromodal-slide.is-open {
   display: block;
