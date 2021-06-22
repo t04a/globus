@@ -42,7 +42,8 @@ body {
   font-family: "HelveticaNeueCyr";
   font-size: 12px;
   margin: 0;
-  background: url("../src/img/bg\ 1.png");
+  background: url("../src/img/bg\ 1.png") no-repeat;
+  background-size: 100% 100%;
 }
 h2 {
   margin: 0;
@@ -211,14 +212,94 @@ a {
   }
 
 }
+.nav-tc__mob {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1E53B4;
+  text-transform: uppercase;
+  position: relative;
+  border: 1px solid #F1F6FA;
+  position: relative;
+}
+.nav-tc__mob-icon {
+  background: url("../src/svg/arrow-down-sign-to-navigate\ \(1\)\ 1.svg") no-repeat;
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+}
+.nav-tc-items {
+  display: none;
+  position: absolute;
+  width: calc(100% - 30px);
+  z-index: 10;
+}
+.nav-tc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #657F91;;
+  text-transform: uppercase;
+  position: relative;
+  border: 1px solid #F1F6FA;
+}
+.nav-tc-item:hover {
+  background: #F1F6FA;
+}
+@media (min-width: 768px) {
+  .nav-tc__mob {
+    display: none;
+  }
+  .nav-tc-items {
+    display: flex;
+    position: relative;
+    width: auto;
+    z-index: 0;
+  }
+  .nav-tc-item {
+    padding: 22px 15px;
+    gap: 9px;
+    flex-grow: 2;
+  }
+  .nav-tc-item:hover {
+    background: #FFFFFF;
+    border-bottom: 2px solid #1E53B4;
+    color: #1E53B4;
+  }
+  .nav-tc-item:hover img {
+    filter: invert(17%) sepia(99%) saturate(2133%) hue-rotate(213deg) brightness(50%) contrast(156%);
+  }
+}
+@media (min-width: 1200px) {
+  .nav-tc-items {
+    margin: 20px 0;
+  }
+  .nav-tc-item {
+    font-size: 16px;
+  }
+}
 .films {
   padding-top: 10px;
   padding-bottom: 50px;
+  /* background: #FFFFFF; */
 }
 .film {
   padding: 20px;
   box-shadow: 0px 2px 17px rgba(7, 48, 118, 0.07);
   margin-bottom: 10px;
+  background: #FFFFFF;
 }
 .film:last-child {
   margin-bottom: 0;
@@ -570,6 +651,9 @@ a {
   h2 {
     font-size: 50px;
   }
+  .films {
+    padding-bottom: 35px;
+}
   .film {
     display: grid;
     grid-template-columns: 260px 1fr;

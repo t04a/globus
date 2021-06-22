@@ -15,7 +15,27 @@ headerMenuIconClose.addEventListener('click', () => {
   headerMenuInnerMenu.classList.toggle("d-block");
 });
 
+let tcNavMenu = document.querySelector(".nav-tc__mob");
+let tcNavMenuDropdown = document.querySelector(".nav-tc-items");
 
+tcNavMenu.addEventListener("click", () => {
+  tcNavMenuDropdown.classList.toggle("d-block");
+});
+
+/* window.onclick = function(event) {
+  if (!event.target.matches('.nav-tc__mob')||event.target.matches('.nav-tc__items')) {
+
+    var dropdowns = document.getElementsByClassName("nav-tc-items");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('d-block')) {
+        openDropdown.classList.remove('d-block');
+      }
+    }
+  }
+}
+ */
 function togglePlaceBusy() {
   event.target.classList.toggle("color-selected");
 }
