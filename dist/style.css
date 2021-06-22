@@ -162,6 +162,10 @@ a {
   .logo {
     margin-right: auto;
   }
+  .logo img {
+    width: 180px;
+    height: 40px;
+  }
   .menu-inner {
     top: -18px;
     right: -15px;
