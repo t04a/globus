@@ -36,6 +36,29 @@ tcNavMenu.addEventListener("click", () => {
   }
 }
  */
+
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    bulletElement: 'p',
+  },
+});
+
+let filmsDesc = document.querySelectorAll(".film__info .film__desc p");
+filmsDesc.forEach(el => {
+  let textLength = el.innerHTML.length;
+  let newText;
+  if (textLength >= 300) {
+    newText = el.innerHTML.slice(0, 300) + "<a href='#'>Читать подробнее...</a>";
+    el.innerHTML = newText;
+  }
+});
+
 function togglePlaceBusy() {
   event.target.classList.toggle("color-selected");
 }
