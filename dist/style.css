@@ -413,6 +413,40 @@ a {
   height: 16px;
   margin-left: auto;
 }
+.pickup-date {
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #eaf2fa;
+  box-sizing: border-box;
+  max-width: 93px;
+}
+.pickup-date p:nth-child(1) {
+  font-size: 10px;
+  color: #232323;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+.pickup-date p:nth-child(2) {
+  font-size: 25px;
+  color: #1e53b4;
+  margin-bottom: 4px;
+}
+.pickup-date p:nth-child(3) {
+  font-size: 11px;
+  color: #535353;
+}
+.pickup-date.selected {
+  background: linear-gradient(180deg, #0f4392 0%, #052d73 100%);
+  box-shadow: 0px 11px 24px rgba(7, 48, 118, 0.3);
+}
+.pickup-date.selected p {
+  color: #ffffff;
+}
+.pickup-date.selected p:nth-child(3) {
+  color: #c1c9d7;
+}
 @media (min-width: 768px) {
   .dates-mob {
     display: none;
@@ -420,40 +454,7 @@ a {
   .slider-dates .swiper-container {
     display: block;
   }
-  .pickup-date {
-    padding: 15px 0;
-    text-align: center;
-    text-transform: uppercase;
-    background: #ffffff;
-    border: 1px solid #eaf2fa;
-    box-sizing: border-box;
-    max-width: 93px;
-  }
-  .pickup-date p:nth-child(1) {
-    font-size: 10px;
-    color: #232323;
-    margin-bottom: 3px;
-    font-weight: 500;
-  }
-  .pickup-date p:nth-child(2) {
-    font-size: 25px;
-    color: #1e53b4;
-    margin-bottom: 4px;
-  }
-  .pickup-date p:nth-child(3) {
-    font-size: 11px;
-    color: #535353;
-  }
-  .pickup-date.selected {
-    background: linear-gradient(180deg, #0f4392 0%, #052d73 100%);
-    box-shadow: 0px 11px 24px rgba(7, 48, 118, 0.3);
-  }
-  .pickup-date.selected p {
-    color: #ffffff;
-  }
-  .pickup-date.selected p:nth-child(3) {
-    color: #c1c9d7;
-  }
+  
   .swiper-button-prev-custom,
   .swiper-button-next-custom {
     display: block;
@@ -1351,4 +1352,41 @@ a {
   .modal-film__main {
     padding: 0 40px 40px;
   }
+}
+.modal__header {
+  position: relative;
+}
+.modal-dates__content {
+  background: #ffffff;
+  padding: 15px 20px 20px;
+}
+.modal-dates__text {
+  color: #838F97;
+  font-size: 13px;
+  max-width: 512px;
+  margin: 0 auto 10px;
+}
+.modal-dates__dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  max-width: 512px;
+  margin: 0 auto 15px;
+}
+.modal-dates__dates .pickup-date {
+  width: 123px;
+  min-width: 123px;
+}
+.modal-dates__accept {
+  width: 250px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e53b4;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0 auto;
 }
