@@ -1,8 +1,4 @@
-MicroModal.init({
-  disableScroll: true, // [6]
-  // disableFocus: false, // [7]
-  // debugMode: true // [10]
-});
+
 
 let headerMenuIconOpen = document.querySelector(".page-header-top .menu .menu__open");
 let headerMenuIconClose = document.querySelector(".page-header-top .menu-inner .menu__close");
@@ -37,7 +33,7 @@ tcNavMenu.addEventListener("click", () => {
 }
  */
 
-const swiper1 = new Swiper('.slider-news .swiper-container', {
+const swiperNews = new Swiper('.slider-news .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -45,19 +41,20 @@ const swiper1 = new Swiper('.slider-news .swiper-container', {
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
-    bulletElement: 'p',
   },
 });
 
-const swiper2 = new Swiper('.slider-dates .swiper-container', {
+const swiperDates = new Swiper('.slider-dates .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 7,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    bulletElement: 'p',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    // nextEl: '.swiper-button-next-custom',
+    // prevEl: '.swiper-button-prev-custom',
   },
 });
 
@@ -68,7 +65,7 @@ filmsDesc.forEach(el => {
   let textLength = el.innerHTML.length;
   let newText;
   if (textLength >= 300) {
-    newText = el.innerHTML.slice(0, 300) + "<a href='#'>Читать подробнее...</a>";
+    newText = el.innerHTML.slice(0, 300) + "<a href='#'  data-micromodal-trigger='modal-film'>Читать подробнее...</a>";
     el.innerHTML = newText;
   }
 });
@@ -78,5 +75,11 @@ function togglePlaceBusy() {
 }
 let places = document.querySelectorAll(".seats-plan__row-place");
 places.forEach(el => el.addEventListener('click', togglePlaceBusy));
+
+MicroModal.init({
+  disableScroll: true, // [6]
+  // disableFocus: false, // [7]
+  // debugMode: true // [10]
+});
 
 console.log("the end");
