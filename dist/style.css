@@ -294,6 +294,7 @@ a {
   }
   .nav-tc-item {
     font-size: 16px;
+    height: 63px;
   }
 }
 .breadcrumps {
@@ -343,7 +344,6 @@ a {
 }
 .slider-news .swiper-container {
   width: 100%;
-
 }
 .slider-news .swiper-slide-content img{
   width: 100%;
@@ -441,6 +441,9 @@ a {
 }
 .film__country img {
   margin-right: 8px;
+}
+.film__desc a{
+  font-weight: bold;
 }
 .film__date {
   display: flex;
