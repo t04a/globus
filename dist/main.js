@@ -37,7 +37,7 @@ tcNavMenu.addEventListener("click", () => {
 }
  */
 
-const swiper = new Swiper('.swiper-container', {
+const swiper1 = new Swiper('.slider-news .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
@@ -48,6 +48,20 @@ const swiper = new Swiper('.swiper-container', {
     bulletElement: 'p',
   },
 });
+
+const swiper2 = new Swiper('.slider-dates .swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    bulletElement: 'p',
+  },
+});
+
+
 
 let filmsDesc = document.querySelectorAll(".film__info .film__desc p");
 filmsDesc.forEach(el => {
