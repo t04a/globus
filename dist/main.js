@@ -48,7 +48,7 @@ const swiperDates = new Swiper('.slider-dates .swiper-container', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 7,
+  slidesPerView: 'auto',
 
   navigation: {
   //   nextEl: '.swiper-button-next',
