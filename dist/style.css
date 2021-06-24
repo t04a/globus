@@ -562,6 +562,14 @@ a {
   right: 0;
   width: 30px;
   height: 30px;
+  border-radius: 50%;
+  background: #F1F7FD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: #1E53B4;
 }
 .film__name {
   color: #232323;
@@ -785,6 +793,7 @@ a {
   .film__limit {
     width: 40px;
     height: 40px;
+    font-size: 16px;
   }
   .film__desc {
     line-height: 21px;
