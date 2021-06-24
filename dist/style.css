@@ -354,6 +354,21 @@ a {
   object-fit: cover;
   object-fit: contain;
 }
+.slider-news .swiper-pagination-bullet {
+  position: relative;
+}
+.slider-news .swiper-pagination-bullet-active::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border-radius: 50%;
+  border: 1px solid #1E53B4;
+  box-sizing: border-box;
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .slider-news {
     padding-top: 25px;
