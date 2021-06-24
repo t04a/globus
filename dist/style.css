@@ -469,7 +469,6 @@ a {
   .slider-dates .swiper-container {
     display: block;
   }
-  
   .swiper-button-prev-custom,
   .swiper-button-next-custom {
     display: block;
@@ -479,14 +478,18 @@ a {
     border-radius: 50%;
     z-index: 10;
     top: calc(50% - 15px);
+    background: #e2e6ea url("../src/svg/left-arrow\ grey.svg") no-repeat 50% 50%;
   }
   .swiper-button-prev-custom {
     left: 0;
-    background: #e2e6ea url("../src/svg/") no-repeat 50% 50%;
+    transform: rotate(-180deg);
   }
   .swiper-button-next-custom {
     right: 0;
-    background: #e2e6ea url("../src/svg/left-arrow\ grey.svg") no-repeat 50% 50%;
+  }
+  .swiper-button-prev-custom:hover,
+  .swiper-button-next-custom:hover {
+    background: #1E53B4 url("../src/svg/right-arrow-white.svg") no-repeat 50% 50%;
   }
 }
 @media (min-width: 1200px) {

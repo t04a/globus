@@ -51,10 +51,10 @@ const swiperDates = new Swiper('.slider-dates .swiper-container', {
   slidesPerView: 7,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    // nextEl: '.swiper-button-next-custom',
-    // prevEl: '.swiper-button-prev-custom',
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-custom',
+    prevEl: '.swiper-button-prev-custom',
   },
 });
 
