@@ -82,4 +82,13 @@ MicroModal.init({
   // debugMode: true // [10]
 });
 
+let modalFilmTrailer = document.querySelector(".modal-film__trailer");
+let modalFilmTrailerPreview = document.querySelector(".modal-film__trailer-preview");
+modalFilmTrailerPreview.addEventListener('click', () => {
+  let trailerSrc = modalFilmTrailerPreview.dataset.trailerSrc;
+  modalFilmTrailer.innerHTML = "";
+  let iframe = `<iframe src="https://www.youtube.com/embed/${trailerSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>`;
+  modalFilmTrailer.insertAdjacentHTML('afterbegin', iframe);
+});
+
 console.log("the end");
