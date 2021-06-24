@@ -962,6 +962,8 @@ a {
   align-items: center;
   backdrop-filter: blur(10px);
   z-index: 20;
+  height: 100vh;
+  overflow: scroll;
 }
 .modal__container {
   background-color: #fff;
@@ -970,7 +972,8 @@ a {
   box-sizing: border-box;
   width: calc(100% - 30px);
   box-shadow: 0px 15px 53px rgba(1, 15, 38, 0.7);
-  overflow: auto;
+  /* overflow: auto; */
+  background: #ffffff;
 }
 .modal__close {
   background: transparent;
@@ -1082,6 +1085,7 @@ a {
 }
 .modal-plan__main {
   padding: 5px 15px 60px;
+  background: #ffffff;
 }
 .screen {
   text-align: center;
