@@ -302,10 +302,14 @@ a {
   padding-top: 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  /* gap: 30px; */
 }
 .breadcrumps-item {
   position: relative;
+  margin-right: 30px;
+}
+.breadcrumps-item:last-child {
+  margin-right: 0;
 }
 .breadcrumps-item::before {
   content: "";
@@ -338,6 +342,9 @@ a {
   }
   .breadcrumps-item::before {
     left: -22px;
+  }
+  .breadcrumps-item {
+    margin-right: 40px;
   }
 }
 .slider-news {
