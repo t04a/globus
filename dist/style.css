@@ -479,6 +479,7 @@ a {
     z-index: 10;
     top: calc(50% - 15px);
     background: #e2e6ea url("../src/svg/left-arrow\ grey.svg") no-repeat 50% 50%;
+    cursor: pointer;
   }
   .swiper-button-prev-custom {
     left: 0;

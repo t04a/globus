@@ -18,41 +18,21 @@ tcNavMenu.addEventListener("click", () => {
   tcNavMenuDropdown.classList.toggle("d-block");
 });
 
-/* window.onclick = function(event) {
-  if (!event.target.matches('.nav-tc__mob')||event.target.matches('.nav-tc__items')) {
-
-    var dropdowns = document.getElementsByClassName("nav-tc-items");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('d-block')) {
-        openDropdown.classList.remove('d-block');
-      }
-    }
-  }
-}
- */
-
 const swiperNews = new Swiper('.slider-news .swiper-container', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
 
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
 });
 
 const swiperDates = new Swiper('.slider-dates .swiper-container', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
   slidesPerView: 'auto',
 
   navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next-custom',
     prevEl: '.swiper-button-prev-custom',
   },
@@ -77,18 +57,26 @@ let places = document.querySelectorAll(".seats-plan__row-place");
 places.forEach(el => el.addEventListener('click', togglePlaceBusy));
 
 MicroModal.init({
-  disableScroll: true, // [6]
-  // disableFocus: false, // [7]
-  // debugMode: true // [10]
+  onClose: restoreModal,
+  disableScroll: true,
 });
+
 
 let modalFilmTrailer = document.querySelector(".modal-film__trailer");
 let modalFilmTrailerPreview = document.querySelector(".modal-film__trailer-preview");
 modalFilmTrailerPreview.addEventListener('click', () => {
   let trailerSrc = modalFilmTrailerPreview.dataset.trailerSrc;
-  modalFilmTrailer.innerHTML = "";
-  let iframe = `<iframe src="https://www.youtube.com/embed/${trailerSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>`;
+  let iframe = `<iframe id="player" src="https://www.youtube.com/embed/${trailerSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>`;
+  modalFilmTrailerPreview.style.display="none";
+  modalFilmTrailer.querySelector(".play-button").style.display = "none";
+
   modalFilmTrailer.insertAdjacentHTML('afterbegin', iframe);
 });
+
+function restoreModal() {
+  modalFilmTrailer.querySelector("iframe").remove();
+  modalFilmTrailerPreview.style.display="block";
+  modalFilmTrailer.querySelector(".play-button").style.display = "flex";
+}
 
 console.log("the end");
