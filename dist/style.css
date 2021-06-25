@@ -260,7 +260,7 @@ a {
 }
 .nav-tc-item {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   background: #ffffff;
   box-sizing: border-box;
