@@ -67,16 +67,19 @@ let modalFilmTrailerPreview = document.querySelector(".modal-film__trailer-previ
 modalFilmTrailerPreview.addEventListener('click', () => {
   let trailerSrc = modalFilmTrailerPreview.dataset.trailerSrc;
   let iframe = `<iframe id="player" src="https://www.youtube.com/embed/${trailerSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>`;
-  modalFilmTrailerPreview.style.display="none";
+  modalFilmTrailerPreview.style.display = "none";
   modalFilmTrailer.querySelector(".play-button").style.display = "none";
 
   modalFilmTrailer.insertAdjacentHTML('afterbegin', iframe);
 });
 
 function restoreModal() {
-  modalFilmTrailer.querySelector("iframe").remove();
-  modalFilmTrailerPreview.style.display="block";
-  modalFilmTrailer.querySelector(".play-button").style.display = "flex";
+  let iframe = modalFilmTrailer.querySelector("iframe");
+  if (iframe) {
+    modalFilmTrailer.querySelector("iframe").remove();
+    modalFilmTrailerPreview.style.display = "block";
+    modalFilmTrailer.querySelector(".play-button").style.display = "flex";
+  } 
 }
 
 console.log("the end");
