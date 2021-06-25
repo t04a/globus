@@ -338,7 +338,7 @@ a {
 @media (min-width: 1200px) {
   .breadcrumps {
     padding-top: 30px;
-    gap: 40px;
+    /* gap: 40px; */
   }
   .breadcrumps-item::before {
     left: -22px;
