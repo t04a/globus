@@ -462,6 +462,9 @@ a {
 .pickup-date.selected p:nth-child(3) {
   color: #c1c9d7;
 }
+.slider-dates__gradient {
+  display: none;
+}
 @media (min-width: 768px) {
   .dates-mob {
     display: none;
@@ -491,6 +494,16 @@ a {
   .swiper-button-prev-custom:hover,
   .swiper-button-next-custom:hover {
     background: #1E53B4 url("../src/svg/right-arrow-white.svg") no-repeat 50% 50%;
+  }
+  .slider-dates__gradient {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 0.01) 15% 85%, rgba(255, 255, 255, 0.5) 85%);
+    z-index: 1;
   }
 }
 @media (min-width: 1200px) {
