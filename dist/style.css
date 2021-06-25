@@ -366,7 +366,7 @@ a {
   top: -5px;
   left: -5px;
   border-radius: 50%;
-  border: 1px solid #1E53B4;
+  border: 1px solid #1e53b4;
   box-sizing: border-box;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -493,7 +493,8 @@ a {
   }
   .swiper-button-prev-custom:hover,
   .swiper-button-next-custom:hover {
-    background: #1E53B4 url("../src/svg/right-arrow-white.svg") no-repeat 50% 50%;
+    background: #1e53b4 url("../src/svg/right-arrow-white.svg") no-repeat 50%
+      50%;
   }
   .slider-dates__gradient {
     display: block;
@@ -502,7 +503,12 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) 15%, rgba(255, 255, 255, 0.01) 15% 85%, rgba(255, 255, 255, 0.5) 85%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255),
+      transparent 20% 80%,
+      rgba(255, 255, 255)
+    );
     z-index: 1;
   }
 }
@@ -577,13 +583,13 @@ a {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #F1F7FD;
+  background: #f1f7fd;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 10px;
   font-weight: bold;
-  color: #1E53B4;
+  color: #1e53b4;
 }
 .film__name {
   color: #232323;
@@ -1460,7 +1466,7 @@ a {
   padding: 15px 20px 20px;
 }
 .modal-dates__text {
-  color: #838F97;
+  color: #838f97;
   font-size: 13px;
   max-width: 512px;
   margin: 0 auto 10px;
