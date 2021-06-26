@@ -702,19 +702,12 @@ a {
   left: calc(50% - 2px);
   width: 4px;
   color: #838f97;
-  /* margin: 0 8px; */
 }
 .film__session-price {
   color: #232323;
   font-weight: bold;
-  /* position: relative; */
   line-height: 1em;
 }
-/* .film__session-price::after {
-  content: "₽";
-  position: absolute;
-  right: 0;
-} */
 /* ------------------------------- */
 .wrap-contacts {
   background-color: #eff3f8;
