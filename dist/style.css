@@ -1324,9 +1324,6 @@ a {
     top: 20px;
     right: 20px;
   }
-  .film__detail {
-    /* gap: 6px; */
-  }
   .film__detail > div {
     height: 37px;
     display: flex;
@@ -1485,8 +1482,11 @@ a {
     align-items: center;
     /* gap: 40px; */
   }
-  .modal-film-desc__info .film__country:nth-child(n) {
-    margin-right: 40px;
+  .modal-film-desc__info div:nth-child(n) {
+    margin-right: 35px;
+  }
+  .modal-film-desc__info div:last-child {
+    margin-right: 0;
   }
   .modal-film-desc__info .film__duration {
     margin-right: 0;
@@ -1511,6 +1511,9 @@ a {
 @media (min-width: 1200px) {
   .modal__close {
     right: -28px;
+  }
+  .modal-film-desc__info div:nth-child(n) {
+    margin-right: 40px;
   }
 }
 .modal__header {
