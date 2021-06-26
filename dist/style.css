@@ -677,12 +677,12 @@ a {
   display: flex;
   /* justify-content: space-between; */
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
   border: 1px solid #eaf2fa;
   width: 100px;
   height: 40px;
   box-sizing: border-box;
-  padding: 13px 0;
+  /* padding: 13px 0; */
   position: relative;
 }
 .film__session:hover {
@@ -707,7 +707,14 @@ a {
 .film__session-price {
   color: #232323;
   font-weight: bold;
+  /* position: relative; */
+  line-height: 1em;
 }
+/* .film__session-price::after {
+  content: "₽";
+  position: absolute;
+  right: 0;
+} */
 /* ------------------------------- */
 .wrap-contacts {
   background-color: #eff3f8;
