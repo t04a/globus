@@ -64,14 +64,17 @@ MicroModal.init({
 
 let modalFilmTrailer = document.querySelector(".modal-film__trailer");
 let modalFilmTrailerPreview = document.querySelector(".modal-film__trailer-preview");
-modalFilmTrailerPreview.addEventListener('click', () => {
+let modalFilmTrailerPlayButton = document.querySelector(".modal-film__trailer .play-button");
+function activateYoutubeTrailer() {
   let trailerSrc = modalFilmTrailerPreview.dataset.trailerSrc;
   let iframe = `<iframe id="player" src="https://www.youtube.com/embed/${trailerSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>`;
   modalFilmTrailerPreview.style.display = "none";
   modalFilmTrailer.querySelector(".play-button").style.display = "none";
 
   modalFilmTrailer.insertAdjacentHTML('afterbegin', iframe);
-});
+}
+modalFilmTrailerPreview.addEventListener('click', activateYoutubeTrailer);
+modalFilmTrailerPlayButton.addEventListener('click', activateYoutubeTrailer);
 
 function restoreModal() {
   let iframe = modalFilmTrailer.querySelector("iframe");
@@ -81,5 +84,3 @@ function restoreModal() {
     modalFilmTrailer.querySelector(".play-button").style.display = "flex";
   } 
 }
-
-console.log("the end");
